@@ -99,9 +99,7 @@ export const isQueueClosed = (openingHours) => {
 
   const currentDayOpeningHours = openingHours[day].split('-')
   
-  if (Array.isArray(currentDayOpeningHours) && currentDayOpeningHours.length === 2) {
-    return currentTime < currentDayOpeningHours[0] || currentTime > currentDayOpeningHours[1]
-  }
+  
 
   return true
 }
